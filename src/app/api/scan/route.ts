@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
+// Cloudflare Pages requires Edge Runtime
+export const runtime = 'edge';
+
 // Agent A - The Advisor (Audit Agent)
 // Per PRD: Search + Gemini analysis + Deterministic scoring
 
